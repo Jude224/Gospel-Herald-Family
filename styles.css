@@ -14,13 +14,13 @@ li>a{
 	text-decoration: none;
 	}
 .connect
-        {
-        color: #000;
-        background-color: rgb(220, 220, 220);
-        font-style: italic;
-        font-size: 18px;
-        }
-.Jesus{
+   {
+    color: #000;
+    background-color: rgb(220, 220, 220);
+    font-style: italic;
+    font-size: 18px;
+    }
+#Jesus{
 	background-color: rgb(240, 240, 240);
 	padding: 40px 40px;
 	margin-bottom: 400px;
@@ -38,12 +38,12 @@ li>a{
 	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
-	padding: 20px 10px;
+	padding: 25px 15px;
 	margin: 0 auto;
 	gap: 16px;
 	}
 .flex{
-	margin-top: 600px;
+	margin-top: 500px;
 	}
 .gallery2 img{
 	width: 100%;
@@ -60,8 +60,10 @@ li>a{
 	padding: 16px 16px;
 	margin: 0 auto;
 	gap: 17px;
-	overflow-x: auto;
+	overflow: auto;
 	flex-wrap: no-wrap;
+	white-space: nowrap;
+	-webkit-overflow-scrolling: touch;
 	}
 
 .one{
@@ -161,6 +163,7 @@ footer>p{
     left: 0;
 	padding: 0;
 	margin-top: -1px;
+	z-index: -1;
 	}
 .text-1{
 	font-size: 35px;
@@ -186,16 +189,17 @@ footer>p{
 /* Centered text */
 .centered1{
     position: absolute;
-    margin-bottom: 600px;
+    margin-bottom: 490px;
 	}
 /* Centered text */
 .centered{
     position: absolute;
-    margin-bottom: -260px;
+    margin-bottom: -280px;
 	}
 .center{
 	font-size: 28px;
 	color: white;
+	font-weight: bold;
 	}
 .middle{
 	font-size: 23px;
@@ -221,20 +225,31 @@ nav>ul>li{
 	margin: 0 0rem;
 	padding: 0.2rem;
 	color: white;
+	float: right;
 	}
 nav{
 	background-color: rgb(100, 0,0);
     height: 50px;
     margin-top: -20px;
-   }
-.link1{
+    overflow: hidden;
+	}
+ /* Style the links inside the navigation bar */
+.bottomnav a{
 	background-color: rgb(248, 248, 248);
 	text-decoration: none;
 	font-size: 18px;
 	color: black;
-	padding: 10px 10px;
+	padding: 12px 12px;
 	border-radius: 4px;
 	text-weight: 800;
+	float: right;
+    text-align: center;
+    margin-top: 4px;
+	}
+.push1{
+	margin-right: 15px;
+.push{
+	margin-right: 50px;
 	}
 .gospel{
 	font-size: 21px;
@@ -247,12 +262,3 @@ nav{
 hr{
 	border: 0.01px solid rgb(190, 190, 190);
 	}
-nav > ul {
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    align-items: center;
-    padding-inline-start: 0;
-    margin-block: 0;
-    height: 100%;
-    }
