@@ -266,16 +266,3 @@ bottomnav{
 hr{
 	border: 0.01px solid rgb(190, 190, 190);
 	}
-.Social-Media-Links ul{
-display: flex;
-	}
-.Social-Media-Links ul li{
-	list-styles: none;
-	margin: 0 15px;
-	}
-.Social-Media-Links ul li .fa{
-	font-size: 30px;
-	}
-.Social-Media-Links a:hover{
-	transform: translate(0, -10px);
-	}
