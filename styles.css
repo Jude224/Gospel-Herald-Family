@@ -5,7 +5,7 @@ body{
 	max-width: 1000px;
 	width: 100%;
 	margin: 0;
-	font-family: Roboto Raleway;
+	font-family: Playfair Display;
 	text-align: center;
 	}
 li>a{
@@ -13,6 +13,7 @@ li>a{
 	font-size: 22px;
 	text-decoration: none;
 	}
+
 .connect
    {
     color: #000;
@@ -26,7 +27,7 @@ li>a{
 	}
 .gallery img{
 	width: 100%;
-	max-width: 390px;
+	max-width: 400px;
 	height: 600px;
 	object-fit: cover;
 	border-radius: 10px;
@@ -44,27 +45,6 @@ li>a{
 .flex{
 	margin-top: 600px;
 	}
-.gallery2 img{
-	width: 100%;
-	max-width: 400px;
-	height: 600px;
-	object-fit: cover;
-	border-radius: 10px;
-	}
-.gallery2{
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
-	padding: 16px 16px;
-	margin: 0 auto;
-	gap: 17px;
-	overflow: auto;
-	flex-wrap: no-wrap;
-	white-space: nowrap;
-	-webkit-overflow-scrolling: touch;
-	}
-
 .one{
 	font-style: italic;
 	font-size: 35px;
@@ -121,8 +101,8 @@ footer>a{
 	text-decoration: none;
 	}
 footer>a:hover{
-	color: rgb(100, 0, 0);
-	text-decoration: underline;
+	color: rgb(240, 240, 240);
+	text-decoration: none,
 	}
 footer>a:visited{
 	color: rgb(250, 250, 250);
@@ -230,11 +210,40 @@ nav{
     height: 50px;
     margin-top: -20px;
     overflow: hidden;
-	}
+   display: block !important;
+}
+.container {
+  display: inline-block;
+  cursor: pointer;
+  float: left;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+/* Rotate first bar */
+.change .bar1 {
+  transform: translate(0, 11px) rotate(-45deg);
+}
+
+/* Fade out the second bar */
+.change .bar2 {opacity: 0;}
+
+/* Rotate last bar */
+.change .bar3 {
+  transform: translate(0, -11px) rotate(45deg);
+}
+
+
 bottomnav{
-	width: 3 5rem;
-	display: flex;
-	jusify-content: space-between;
+	width: 1.2rem;
+	flex: none;
+	
 	}
  /* Style the links inside the navigation bar */
 .bottomnav a{
@@ -264,5 +273,5 @@ bottomnav{
 	font-size: 18px;
 	}
 hr{
-	border: 0.01px solid rgb(190, 190, 190);
+	border: 0.1rem solid rgb(2, 2, 2);
 	}
