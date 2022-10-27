@@ -1,98 +1,231 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-     <meta charset="UTF-8">
-	 <title>ghf</title>
-	 <link rel="stylesheet" href="styles.css">
-	 <meta name='viewport' content='width=device-width, initial-scale=1' />
-	 <meta name="description" content="width=device-width, initial-scale=1">
-	<script src="https://kit.fontawesome.com/50f1ef47e8.js" crossorigin="anonymous"></script>
+	<html lang="en">
+			<head>
+				<meta charset="utf-8">
+					<meta name="viewport" content="width=device-width, initial-scale=1">
+						<meta name="description" content="width=device-width, initial-scale=1">
+							<script src="https://kit.fontawesome.com/50f1ef47e8.js" crossorigin="anonymous"></script>
+				<title>sign-in</title>
+				<style>
+					body{
+						margin: 0;
+						height: 100vh;
+						max-width:1000%;
+						width: 100%;
+						color: black;
+						background-color:  rgb(230, 230, 230);
+						font-family: Roboto;
+						}
+					label{
+						color: black
+						display: block;
+						margin: 0.5rem 0;
+						}
+					.text{
+						font-weight: bold;
+						}
+					input{
+						display: inline-block;
+						margin: 0.5rem 0;
+						width: 370px;
+						height: 30px;
+						border-radius: 0.25rem;
+						font-style: bold;
+						border-color: rgb(230, 230, 230);
+						border-color: black;
+   				 	border: 1px solid rgb(230, 230, 230);
+						}
+					.signin{
+						color: white;
+						background-color:  rgb(0,195,0);
+						width: 90px;
+						height: 40px;
+						text-align: center;
+						font-size: 15px;
+						border: none;
+						border-radius: 0.25rem;
+						font-size: 22px;
+						}
+					.signup{
+						color: white;
+						background-color:  rgb(0,55,0);
+						width: 90px;
+						height: 40px;
+						text-align: center;
+						font-size: 15px;
+						border: none;
+						border-radius: 0.25rem;
+						font-size: 22px;
+						}
+				    a{
+						align: center;
+						color:  rgb(0,195,0);
+						font-size: 20px;
+						}
+					a:hover{
+						color: rgb(100, 0, 0);
+						}
+					a:visited{
+						color: rgb(230, 0, 0);
+						}
+					fieldset{
+						border-color: rgb(248,  248, 248);
+						border-radius: 5px;
+						padding: 16px 16px;
+   					 border-color: white;
+   					 border: 1px solid rgb(250, 250, 250);
+   					 background-color: white;
+   					 margin-bottom: -450px;
+						}
+					h1, p{
+						text-align: center;
+						margin: 1em auto;
+						margin-top: 25px;
+						}
+					h2{
+						font-size: 25px;
+						}
+					p{
+						font-size: 22px;
+						}
+					form{
+						margin: 0 auto;
+						border-color: rgb(245, 245, 245);
+						background-color: white;
+						}
+					label{
+						font-size: 20px;
+						}
+				   .checkbox{
+						height: 15px;
+						width: 30px;
+						}
+				    .please{
+						color: rgb(210, 210, 210);
+						margin-top: -30px;
+						}
+					footer{
+						background-color: black;
+						color: white;
+						padding: 20px 20px;
+						margin-top: 500px;
+						text-align: center;
+						padding-bottom: 100px;
+						}
+					footer{
+						background-color: rgb(10, 20, 20);
+						color: white;
+						padding: 10px 10px;
+						text-align: left;
+						}
+					footer>a{
+						color: white;
+						font-size: 15px;
+						text-decoration: none;
+						}
+					footer>a:hover{
+						color: rgb(100, 0, 0);
+						text-decoration: underline;
+						}
+					footer>a:visited{
+						color: rgb(250, 250, 250);
+						}
+					address{
+						font-size: 15px;
+						}
+					footer>p{
+						font-size: 14px;
+						color:  rgb(240, 240, 240);
+						margin-bottom: 50px;
+						text-align: center;
+						}
+					.link1{
+						background-color: rgb(248, 248, 248);
+						text-decoration: none;
+						font-size: 21px;
+						color: black;
+						padding: 10px 10px;
+						border-radius: 4px;
+						text-weight: 800;
+						}
+						.gospel{
+						font-size: 21px;
+						text-align: left;
+							}
+						.joinus{
+						margin-bottom: 20px;
+						text-align: left;
+						font-size: 18px;
+						}
+				hr{
+						border: 0.01px solid rgb(190, 190, 190);
+						}
+				h5{
+						font-size: 20px;
+						margin-top: -1px;
+						}
+				.link{
+						background-color:  rgb(0,195,0);
+						text-decoration: none;
+						font-size: 21px;
+						color: white;
+						padding: 10px 10px;
+						border-radius: 4px;
+						text-weight: 800;
+						}
+				#logo2{
+						width: max(100px, 0vw);
+						background-color: black;
+						aspect-ration: 35 / 4;
+						padding: 0.2rem;
+						height: 50px;
+						margin-top: 30px;
+					}
+				.img{
+						height: 30px;
+						margin-top: 20px;
+						}
+						nav>ul>li{
+						display: flex;
+						}
+				nav{
+						background-color: rgb(10, 20, 20);
+						padding: -4px;
+						}
+				.link1{
+						background-color: rgb(248, 248, 248);
+						text-decoration: none;
+						font-size: 21px;
+						color: black;
+						padding: 10px 10px;
+						border-radius: 4px;
+						text-weight: 800;
+						}
+					</style>
 </head>
-
-<body>
-<header class="header">
-	<h1 class="ghf">GOSPEL HERALDS FAMILY</h1>
-	<nav>
-		<div class="container" onclick="myFunction(this)">
-  <div class="bar1"></div>
-  <div class="bar2"></div>
-  <div class="bar3"></div>
-</div>
-		<div class="bottomnav">
-				<a class="push1" href="signup.html">Register</a>
-		</div>
-	</nav>
-	
-</header>
-
-<main>
-	<section class="relationship">
-			<p class="text-1">We want everyone</br> everywhere to have an</br>everyday relationship </br>with Jesus.</p>
-			<a class="link" href="signin.html">Get Involved</a>
-			<video class="video" src="video.mp4">
-	</section>
-	
-<div class="gallery flex">
-			<img src="children1.jpeg" alt="Location">
-<div class="centered1">
-			<h1 class="Join">Join us this Sunday</h1>
-			<p class="middle1">Every week, we gather across the Globe to preach the Gospel.</p>
-			<a class="link" href="ghf.html">Times and Locations</a>
-</div>
-</div>
-
-<div class="gallery">
-			<img src="bible.jpeg" alt="Read-Your-Bible">
-<div class="centered">
-			<h1 class="center">It’s never been easier to </br>read the Bible</h1>
-			<p class="middle">Get our daily reading plan sent</br> straight to you every morning.</p>
-			<a class="link" href="subscription.html">Try it Out</a>
-</div>
-</div>
-
-<div class="gallery">
-	<img src="preach1.jpg" alt="Watch-Past-Sermons">
-<div class="centered">
-			<h1 class="center">Watch Past Sermons</h1>
-			<p class="middle">See what a Moment at </br>Gospel Herald Family is really like. </br>Check out a past message</br> from one of our ministers.</p>
-			<a class="link" href="Youtube.com">Watch Now</a>
-</div>
-</div>
-
-<div id="Jesus">
-	<div id="evidence">
-<h1>Jesus Changes Everything</h1>
-			<img class="olajide" src="7.jpg" alt="olajide">
-			<p class="one">“The evidence of God’s grace, mercy, and love are boundless for me. He has blessed me beyond measure and directs my every moment on this journey of life until I’m with Him in eternity.”</p>
-			<h2>-Bambe Olajide</h2>
-			<a class="connect" href="learn-about-connect">Learn About Connect</a>
-	</div>
-</div>
-
-<div class="general">
-			<h1 class="family">We’re a family</br> for the</br> generations.</h1>
-			<p class="two">No matter what season of life you find yourself in, you belong here.</p>
-</div>
-
-<div class="gallery">
-			<img  src="worship.jpeg">
-<div class="centered">
-			<h1 class="center">Music</h1>
-			<p class="middle">We preach the gospel through Music.</p>
-			<a class="link" href="Resources.html">Check out Resources</a>
-</div>
-</div>
-
-<div class="gallery">
-			<img src="discipleship.jpeg">
-			<div class="centered">
-			<h1 class="center">Discpleship</h1>
-			<p class="middle">We exist to disciple on</br> Christ doctrines</p>
-			<a class="link" href="discipleship.html">Learn More</a>
-			</div>
-</div>
-
-<footer>
+	<body>
+		<main>
+			<header>
+					<nav>
+						<ul>
+							<li><a class="link1" href="ghf.html">Home</a></li>
+						</ul>
+					</nav>
+					</header>
+				<form>
+						<fieldset>
+						  <h1>Hello!</h1>
+						  <h1 class="Please">Please sign in</h1>
+						  <h2>Log In</h1>
+							<label class="text" for="username">Username<input id="text" type="text" required></label>
+							<label class="text" for="password">Password<input id="password" type="password" pattern="[0-9]{8,}" required></label>
+							<label><input class="checkbox" type="checkbox" required />Keep me logged in</label></br>
+							<button class="signin">Sign In</button>
+							<button class="signup">Sign Up</button></br>
+							<a href="forgot-password">Reset My Password?</a>
+					</fieldset>
+			</form>
+			<footer>
 			<h1 class="gospel">GOSPEL HERALD FAMILY</h1>
 			
 			<p class="joinus">Yes! We are a non-denominational envangelical team.</p>
@@ -101,7 +234,7 @@
 			<a href="privacy-policy">Privacy Policy</a></br>
 			<a href="Terms-of-use">Terms of Use</a></br>
 			<a href="Reprinting">Reprinting & Reposting</a></br>
-			
+		
 			<h5>Quick Links</h5>
 			<a href="resources">Resources</a></br>
 			<a href="about.html">About us</a></br>
